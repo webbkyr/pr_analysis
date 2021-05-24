@@ -20,7 +20,7 @@ async function main() {
 
   /*
   Added the below for debugging purposes to avoid rate-limiting
-  I considered caching, but my solution is a script and not an express app; we want always convert to an express app if needed?
+  I considered caching, but my solution is a script and not an express app; we can always convert to an express app if needed?
   */
   const stats = prResults.map(r => ({ title: r.name, totalPrs: r.pullRequests.length }))
 
